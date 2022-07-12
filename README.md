@@ -1,5 +1,5 @@
 # devfolio-page
  one page responsive
  <h1>
- <a href="devfolio-page.epizy.com" target="_blank" >fokir Demo</a>
+ <a href="http://devfolio-page.epizy.com/" target="_blank" >devfolio Demo</a>
  </h1>
