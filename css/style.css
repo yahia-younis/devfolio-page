@@ -1,0 +1,356 @@
+* {
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+body {
+  background-color: #F5F5F5;
+}
+/* start section home */
+.home {
+  background-image: url(../img/home/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home .overlay {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.home-content {
+  position: relative;
+  z-index: 100;
+}
+/* start navbar */
+.nav-item {
+  padding: 0 0.55rem;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.nav-link {
+  color: #fff!important;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+.nav-link:hover::before {
+  width: 60%;
+}
+.nav-link.active::before {
+  width: 60%;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+.dropdown-toggle::after {
+  vertical-align: 0.1rem;
+}
+.dropdown-menu {
+  width: 220px;
+}
+.dropdown-item {
+  padding: 0.5rem 1rem;
+}
+/* end navbar */
+.home-content h1 {
+  font-size: 4.5rem;
+}
+.typing::after {
+  content: "";
+  animation: typing 4s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "F|";
+  }
+  5% {
+    content: "Fr|";
+  }
+  10% {
+    content: "Fre|";
+  }
+  15% {
+    content: "Free|";
+  }
+  20% {
+    content: "Freel|";
+  }
+  25% {
+    content: "Freeln|";
+  }
+  30% {
+    content: "Freelnc|";
+  }
+  35% {
+    content: "Freelnce|";
+  }
+  40% {
+    content: "Freelncer|";
+  }
+  70% {
+    content: "Freelncer|";
+  }
+  75% {
+    content: "Freelncer|";
+  }
+  80% {
+    content: "Freelncer|";
+  }
+  85% {
+    content: "Freeln|";
+  }
+  90% {
+    content: "Freel|";
+  }
+  95% {
+    content: "Fre|";
+  }
+  100% {
+    content: "F|";
+  }
+}
+/* end section home */
+/* start about us section */
+.about-us {
+  border-radius: .5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+.underline-head {
+  position: relative;
+}
+.underline-head::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 18%;
+  height: 3px;
+  background-color: #0078FF;
+  border-radius: 5px;
+}
+.about-us p {
+  font-size: 1.1rem;
+}
+.about-us span {
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+}
+/* end about us section */
+/*start services section*/
+.underline-p {
+  position: relative;
+}
+.underline-p::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: #0078FF;
+  border-radius: 5px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-head {
+  font-size: 3rem;
+}
+.services-box {
+  margin: 2rem 0;
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.services-box i {
+  font-size: 2rem;
+  padding: 2rem;
+  border: 10px solid #0078ff;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  transition: 0.6s all;
+}
+.services-box:hover i {
+  background-color: #0078FF;
+  border-color: #CDE1F8;
+  color: #fff;
+}
+/*end services section*/
+/* start counter section */
+.counter,
+.testimonial,
+.contact-us {
+  background-image: url(../img/backgrounds/counters-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 3rem 0;
+}
+.counter .overlay,
+.testimonial .overlay,
+.contact-us .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 120, 255, 0.7);
+}
+.counter .row {
+  position: relative;
+  z-index: 10;
+}
+.counter-box i{
+  font-size: 1.5rem;
+}
+.counter-box .coun-icon{
+  border: 10px solid #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: .5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end counter section */
+/* start portfolio section */
+.work-box {
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+  border-radius: 3px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.work-box .w-add a i {
+  font-size: 1.2rem;
+  border: 3px solid #0078ff;
+  padding: 0.7rem;
+  color: #0078ff;
+  border-radius: 50%;
+}
+.work-box-head {
+  overflow: hidden;
+}
+.work-box-body {
+  padding: 1.5rem;
+}
+.work-box img {
+  transition: 0.7s all;
+}
+.work-box:hover img{
+  transform: scale(1.2);
+}
+/* end portfolio section */
+/* start testimonial section */
+.testimonial,
+.contact-us {
+  background-image: url(../img/backgrounds/overlay-bg.jpg);
+  padding: 8rem 0;
+}
+.testimonial .container {
+  position: relative;
+  z-index: 10;
+}
+.testimonial .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.testimonial .carousel-indicators {
+  bottom: -55px;
+}
+/* end testimonial section */
+/* start blog section */
+.blog-box {
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.blog-box .blog-cat {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #0078FF;
+  color: #fff;
+  border-radius: 5px;
+  padding: .45rem 0.9rem;
+  font-size: .7rem;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+}
+.blog-box .my-img{
+  width: 15%;
+  margin-right: .5rem;
+}
+.blog-box h5 {
+  transition: 0.3s all;
+}
+.blog-box h5:hover  {
+  color: #0078FF;
+}
+/* end blog section */
+/* start contact us section */
+.contact-us {
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+  padding-bottom: 4rem;
+}
+.contact-us-box {
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  padding: 3rem;
+  border-radius: .5rem;
+}
+.contact-us .container {
+  position: relative;
+  z-index: 10;
+}
+.contact-icon li {
+  margin-right: .5rem;
+  border: 3px solid #0078FF;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.contact-info li i{
+  color: #0078FF;
+  margin-bottom: 1rem;
+  padding-right: .5rem;
+}
+.contact-us button {
+  background: #0078ff;
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+/* end contact us section */
+/* start footer section */
+.footer {
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
+/* end footer section */
